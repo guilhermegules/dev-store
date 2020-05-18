@@ -1,0 +1,28 @@
+version: "3.7"
+services:
+  server:
+    container_name: "server"
+    build: server
+    ports:
+      - "5555:5555"
+    env_file: 
+      - ./server/src/.env
+    links: 
+      - mongo
+    depends_on: 
+      - mongo
+  mongo:
+    image: mongo:4.2.6
+    container_name: "mongodb"
+    ports:
+      - "27017:27017"
+  client:
+    container_name: "client"
+    build: client
+    ports:
+      - "3000:3000"
+    links: 
+      - server
+    depends_on: 
+      - server
+    stdin_open: true
