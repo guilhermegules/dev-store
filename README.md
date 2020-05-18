@@ -12,7 +12,7 @@
 ### Front-end:
 - [apollo-boost](https://www.apollographql.com/docs/react/get-started/);
 - [react](https://pt-br.reactjs.org/);
-
+## Build and run
 - Build application `docker-compose build`;
 - Run application `docker-compose up`
 
