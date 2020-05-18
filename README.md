@@ -16,4 +16,7 @@
 - Build application `docker-compose build`;
 - Run application `docker-compose up`
 
-[Video demo](https://drive.google.com/file/d/1NiuLBPHo2sjZG2Nm0TLxsjh2Ftzfxp-f/view)
+<h1 align="center">Application demo</h1>
+<p align="center">
+    <img src="./images/demo.gif" />
+</p>
